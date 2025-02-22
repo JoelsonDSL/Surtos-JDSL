@@ -1,0 +1,8 @@
+Package: Surtos-JDSL
+Type: Package
+Title: Descrição do seu pacote
+Version: 0.1.0
+Author: Joelson da Silva Lima <joelsonlima785@gmail.com>
+Maintainer: Joelson da Silva Lima <joelsonlima785@gmail.com
+Description: Um pacote para acompanhar o desenvolvimento no R e RStudio
+License: GPL-3
