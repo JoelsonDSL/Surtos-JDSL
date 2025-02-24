@@ -7,36 +7,29 @@
   Organization: JDSL
   Version: 1.0.0
 
-- Class: text
-  Output: |
+- class: text
+  output: |
     Olá querid@. Seja bem-vindo ao meu pequeno teste de conhecimentos gerais
     para introduzi-lo à linguagem de programação R. Divirta-se.
 
-- Class: text
-  Output: |
+- class: text
+  output: |
     Não se preocupe, por ser sua primeira vez por aqui (e a minha também
     criando uma atividade rsrs) não veremos nada de muito complicado.
 
-- Class: text
-  Output: |
+- class: text
+  output: |
     Vamos fazer uns cálculos simples, tu vai ver.
 
-- Class: cmd_question
-  Output: |
+- class: cmd_question
+  output: |
     Você foi até a fila do RU com seus best friends. Vocês querem comprar
     fichas para uma semana inteira de RU, almoço e janta. Quanto vocês
     devem desembolsar para efetuar esta compra?
-  CorrectAnswer: 32.5
-  AnswerTests: omnitest(correctVal=32.5)
-  Hint: |
+  correctAnswer: 32.5
+  answerTests: omnitest(correctVal=32.5)
+  hint: |
     Tente calcular o valor de cada ficha e multiplicar pela quantidade de dias.
-
-- class: text
-  output: |
-    Parabéns! Você concluiu a lição. Agora, para enviar seus resultados por e-mail,
-    digite no console do R o seguinte comando:
-
-    `enviar_resultados()`
 
 - class: text
   output: |
