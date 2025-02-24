@@ -1,43 +1,3 @@
-
-- Class: meta
-  Course: Monitoria PNB
-  Lesson: Teste de Conhecimentos Gerais
-  Author: Joelson Lima
-  Type: Standard
-  Organization: JDSL
-  Version: 1.0.0
-
-- class: text
-  output: |
-    Olá querid@. Seja bem-vindo ao meu pequeno teste de conhecimentos gerais
-    para introduzi-lo à linguagem de programação R. Divirta-se.
-
-- class: text
-  output: |
-    Não se preocupe, por ser sua primeira vez por aqui (e a minha também
-    criando uma atividade rsrs) não veremos nada de muito complicado.
-
-- class: text
-  output: |
-    Vamos fazer uns cálculos simples, tu vai ver.
-
-- class: cmd_question
-  output: |
-    Você foi até a fila do RU com seus best friends. Vocês querem comprar
-    fichas para uma semana inteira de RU, almoço e janta. Quanto vocês
-    devem desembolsar para efetuar esta compra?
-  correctAnswer: 32.5
-  answerTests: omnitest(correctVal=32.5)
-  hint: |
-    Tente calcular o valor de cada ficha e multiplicar pela quantidade de dias.
-
-- class: text
-  output: |
-    Parabéns! Você concluiu a lição. Agora, para enviar seus resultados por e-mail,
-    digite no console do R o seguinte comando:
-
-    `enviar_resultados()`
-
 - class: meta
   Course: Monitoria PNB
   Lesson: Teste de Conhecimentos Gerais
@@ -66,6 +26,33 @@
     fichas para uma semana inteira de RU, almoço e janta. Quanto vocês
     devem desembolsar para efetuar esta compra?
   correctAnswer: 32.5
-  answerTests: omnitest(correctVal = 32.5)  # Verifique se está utilizando o valor correto
+  answerTests: omnitest(correctVal = 32.5)
   hint: |
     Tente calcular o valor de cada ficha e multiplicar pela quantidade de dias.
+
+- class: text
+  output: |
+    Parabéns! Você concluiu a lição. Agora, para enviar seus resultados por e-mail,
+    digite no console do R o seguinte comando:
+
+    `enviar_resultados()`
+
+- class: code
+  code: |
+    # Defina a função para enviar o e-mail
+    enviar_resultados <- function() {
+      # Carregar o pacote necessário
+      if (!require(mailR)) {
+        install.packages("mailR")
+        library(mailR)
+      }
+      
+      # Definir os parâmetros do e-mail
+      send.mail(from = "seuemail@dominio.com",
+                to = "destinatario@dominio.com",
+                subject = "Resultados da lição",
+                body = "Aqui estão os resultados da lição concluída.",
+                smtp = list(host.name = "smtp.dominio.com", port = 465, user.name = "seuemail@dominio.com", passwd = "sua_senha", ssl = TRUE),
+                authenticate = TRUE,
+                send = TRUE)
+    }
