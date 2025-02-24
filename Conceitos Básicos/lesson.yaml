@@ -69,3 +69,4 @@
   answerTests: omnitest(correctVal = 32.5)  # Verifique se está utilizando o valor correto
   hint: |
     Tente calcular o valor de cada ficha e multiplicar pela quantidade de dias.
+
