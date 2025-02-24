@@ -8,9 +8,8 @@
   Version: 1.0.0
 
 - Class: text
-  Output: | Olá querid@. Seja bem vindo ao meu pequeno teste de conhecimentos gerais
-          | para introduzi-lo a linguagem de programação R. Divirta-se.
-
+  Output: Olá querid@. Seja bem vindo ao meu pequeno teste de conhecimentos gerais
+          para introduzi-lo a linguagem de programação R. Divirta-se.
 - Class: text
   Output: | Não se preocupe, por ser sua primeira vez por aqui (e a minha também
           | criando uma atividade rsrs) não veremos nada de muito complicado.
