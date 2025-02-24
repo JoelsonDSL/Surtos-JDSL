@@ -21,4 +21,62 @@
   CorrectAnswer: "32.5"
   AnswerTests: omnitest(correctExpr= "32.5")
   Hint: "Tá respondendo com muita pressa, lembra dos valores de cada ficha e multiplica pela quantidade de dias"
-  
+
+  - class: text
+  output: |
+    Bem-vindo à lição de introdução à estatística! Aqui, você responderá algumas perguntas básicas para testar seus conhecimentos. Boa sorte!
+
+- class: cmd_question
+  output: |
+    Qual é a média dos números 2, 4, 6 e 8?
+  correctAnswer: 5
+  answerTests: omnitest(correctVal = 5)
+  hint: |
+    A média aritmética é a soma dos valores dividida pela quantidade de números.
+
+- class: cmd_question
+  output: |
+    Qual é a mediana do conjunto de números: 3, 7, 2, 9, 5?
+  correctAnswer: 5
+  answerTests: omnitest(correctVal = 5)
+  hint: |
+    Organize os números em ordem crescente e encontre o valor central.
+
+- class: cmd_question
+  output: |
+    Se um conjunto de dados tem média 10 e desvio padrão 2, qual é o valor do escore z de um elemento com valor 14?
+  correctAnswer: 2
+  answerTests: omnitest(correctVal = 2)
+  hint: |
+    O escore z é calculado como (X - média) / desvio padrão.
+
+- class: mult_question
+  output: |
+    Qual das seguintes medidas NÃO é uma medida de dispersão?
+  answerChoices:
+    - Variância
+    - Mediana
+    - Desvio Padrão
+    - Amplitude
+  correctAnswer: Mediana
+  answerTests: omnitest(correctVal = "Mediana")
+  hint: |
+    Medidas de dispersão indicam o quão espalhados os dados estão em relação à média.
+
+- class: mult_question
+  output: |
+    Qual dos seguintes gráficos é mais adequado para visualizar a distribuição de uma variável contínua?
+  answerChoices:
+    - Histograma
+    - Gráfico de barras
+    - Tabela de frequência
+    - Gráfico de setores
+  correctAnswer: Histograma
+  answerTests: omnitest(correctVal = "Histograma")
+  hint: |
+    Esse tipo de gráfico agrupa valores em intervalos e mostra a frequência de ocorrência.
+
+- class: text
+  output: |
+    Parabéns! Você concluiu esta lição de introdução à estatística. Continue praticando e explorando mais conceitos estatísticos!
+    
