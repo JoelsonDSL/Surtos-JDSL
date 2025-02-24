@@ -31,44 +31,9 @@
   Hint: |
     Tente calcular o valor de cada ficha e multiplicar pela quantidade de dias.
 
-# Carregar pacotes necessários
-if (!requireNamespace("mailR", quietly = TRUE)) {
-  install.packages("mailR", dependencies = TRUE)
-}
-library(swirl)
-library(mailR)
+- Class: text
+  Output: |
+    Parabéns! Você concluiu a lição. Agora, para enviar seus resultados por e-mail,
+    digite no console do R o seguinte comando:
 
-# Função para enviar resultados por e-mail
-enviar_resultados <- function() {
-  progresso <- swirl::get_state()
-  
-  if (!is.null(progresso)) {
-    send.mail(
-      from = "seuemail@gmail.com",  # Substitua pelo seu e-mail
-      to = "destinatario@email.com",  # Substitua pelo destinatário
-      subject = "Resultados do Teste Swirl",
-      body = paste("Aqui estão os resultados do teste:\n", progresso),
-      smtp = list(
-        host.name = "smtp.gmail.com", 
-        port = 465, 
-        user.name = "seuemail@gmail.com",  # Substitua pelo seu e-mail
-        passwd = "sua_senha",  # Substitua pela sua senha
-        ssl = TRUE
-      ),
-      authenticate = TRUE,
-      send = TRUE
-    )
-    message("Resultados enviados com sucesso!")
-  } else {
-    message("Nenhum progresso encontrado para enviar.")
-  }
-}
-
-# Exibir mensagem no início da lição
-message("Bem-vindo ao teste! No final, você poderá enviar seus resultados por e-mail.")
-
-# Adicionar um prompt para enviar os resultados ao final da lição
-swirl_options(swirl_on_exit = function() {
-  message("Parabéns por concluir a lição! Para enviar seus resultados, digite:")
-  message("`enviar_resultados()`")
-})
+    `enviar_resultados()`
