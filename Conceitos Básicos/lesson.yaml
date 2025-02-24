@@ -1,0 +1,135 @@
+- Class: meta
+  Course: Introdução ao R
+  Lesson: Operadores básicos
+  Author: Teotonio Soares de Carvalho
+  Type: Standard
+  Organization: Universidade Federal de Lavras
+  Version: 2.2.21
+
+- Class: text
+  Output: |
+            Bem vindo ao 'Curso de Introdução ao R'. 
+            
+            Nesta lição iremos praticar alguns comandos básicos no R,
+            
+            especialmente as operações aritméticas.
+            
+            (Pressione Enter para prosseguir...)
+
+- Class: text
+  Output: |
+            Uma boa maneira de se familiarizar com o R é utilizando-o como uma simples 
+            
+            calculadora em operações de adição '+', subtração '-', multiplicação '*' e divisão '/'
+            
+            Ou seja, sempre que você precisar de uma calculadora e estiver com o computador ligado
+            
+            utilize o R! 
+            
+            (Pressione Enter para prosseguir...)
+
+- Class: cmd_question
+  Output: |
+           "A adição é feita utilizando o operador +. 
+           
+           EXERCÍCIO 
+           
+           Calcule a soma de 3 e 2. O comando deve ser algo do tipo
+           
+           3 operador 2
+           
+           (lembre-se de pressionar "Enter" após digitar o comando)"
+           
+  CorrectAnswer: '3 + 2'
+  AnswerTests: omnitest(correctExpr='3 + 2', correctVal=5)
+  Hint: 'Resposta incorreta. Para calcular a adição de 3 e 2, apenas digite 3 + 2 no console. Tente novamente.'
+
+
+- Class: cmd_question
+  Output: |
+           A subtração é feita utilizando o operador -
+           
+           EXERCÍCIO
+           
+           Calcule a diferença entre 10 e 8.
+           
+           (lembre-se de pressionar "Enter" após digitar o comando)
+           
+  CorrectAnswer: '10 - 8'
+  AnswerTests: omnitest(correctExpr='10 - 8', correctVal=2)
+  Hint: |
+        Resposta incorreta. Para calcular a diferença entre 10 e 8, apenas digite 10 - 8 no console. 
+        
+        Tente novamente.
+        
+- Class: cmd_question
+  Output: |
+           A multiplicação é feita utilizando o operador *. 
+           
+           EXERCÍCIO
+           
+           Calcule o produto de 7 por 56
+           
+           (lembre-se de pressionar "Enter" após digitar o comando)
+           
+  CorrectAnswer: '7 * 56'
+  AnswerTests: omnitest(correctExpr='7 * 56', correctVal=392)
+  Hint: |
+        Resposta incorreta. Eu esperava 7 * 56. 
+        
+        Tente novamente.
+        
+
+- Class: cmd_question
+  Output: |
+           Finalmente, a divisão é feita utilizando o operador /. 
+           
+           EXERCÍCIO
+           
+           Calcule a divisão de 392 por 7"
+           
+  CorrectAnswer: '392 / 7'
+  AnswerTests: omnitest(correctExpr='392 / 7', correctVal=56)
+  Hint: |
+        Resposta incorreta. Eu esperava 392 / 7. 
+        
+        Tente novamente.
+        
+- Class: cmd_question
+  Output: |
+           Assim como em Álgebra, parênteses podem ser utilizados para indicar
+           
+           a ordem de operação. Por exemplo na expressão abaixo
+           
+           (2 + 3) * 10
+           
+           O resultado é 50. A soma dentro dos parênteses é executada
+           
+           antes da multiplicação por 10.
+           
+           EXERCÍCIO
+           
+           Se uma unidade de laranja custa R$ 0.10, qual seria o custo total de duas sacolas,
+           
+           uma contendo 176 e outra contendo 327 laranjas? Utilize uma única expressão para 
+           
+           esse cálculo.
+           
+  CorrectAnswer: '(176 + 327) * 0.10'
+  AnswerTests: omnitest(correctExpr='(176 + 327) * 0.10', correctVal=50.3)
+  Hint: |
+        Resposta incorreta. Eu esperava (176 + 327) * 0.10
+        
+        Tente novamente.
+        
+
+
+
+
+
+
+
+
+
+
+
