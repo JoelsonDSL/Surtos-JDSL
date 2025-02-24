@@ -31,9 +31,26 @@
   Hint: |
     Tente calcular o valor de cada ficha e multiplicar pela quantidade de dias.
 
-- Class: text
-  Output: |
+- class: text
+  output: |
     Parabéns! Você concluiu a lição. Agora, para enviar seus resultados por e-mail,
     digite no console do R o seguinte comando:
 
     `enviar_resultados()`
+
+- class: code
+  code: |
+    enviar_resultados <- function() {
+      # Carregar pacotes necessários
+      library(mailR)
+      
+      # Definir o e-mail
+      send.mail(from = "seuemail@dominio.com",
+                to = "destinatario@dominio.com",
+                subject = "Resultados da lição",
+                body = "Aqui estão os resultados da lição concluída.",
+                smtp = list(host.name = "smtp.dominio.com", port = 465, user.name = "seuemail@dominio.com", passwd = "sua_senha", ssl = TRUE),
+                authenticate = TRUE,
+                send = TRUE)
+    }
+
