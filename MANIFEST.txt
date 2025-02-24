@@ -1,0 +1,12 @@
+Conceitos_Basicos 
+Variaveis_no_R 
+Modos_de_Variaveis 
+Vetores_I 
+Vetores_II 
+Vetores_III 
+Functions 
+Matrizes 
+Matrizes_II 
+Lists 
+Data.Frames_I 
+Data.Frames_II 
