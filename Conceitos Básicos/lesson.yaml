@@ -27,5 +27,7 @@
     fichas para uma semana inteira de RU, almoço e janta. Quanto vocês
     devem desembolsar para efetuar esta compra?
   CorrectAnswer: 32.5
+  AnswerTests: omnitest(correctVal=32.5)
   Hint: |
     Tente calcular o valor de cada ficha e multiplicar pela quantidade de dias.
+
