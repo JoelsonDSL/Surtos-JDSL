@@ -38,13 +38,24 @@
 
     `enviar_resultados()`
 
+- class: text
+  output: |
+    Parabéns! Você concluiu a lição. Agora, para enviar seus resultados por e-mail,
+    digite no console do R o seguinte comando:
+
+    `enviar_resultados()`
+
 - class: code
   code: |
+    # Defina a função para enviar o e-mail
     enviar_resultados <- function() {
-      # Carregar pacotes necessários
-      library(mailR)
+      # Carregar o pacote necessário
+      if (!require(mailR)) {
+        install.packages("mailR")
+        library(mailR)
+      }
       
-      # Definir o e-mail
+      # Definir os parâmetros do e-mail
       send.mail(from = "seuemail@dominio.com",
                 to = "destinatario@dominio.com",
                 subject = "Resultados da lição",
@@ -53,4 +64,3 @@
                 authenticate = TRUE,
                 send = TRUE)
     }
-
