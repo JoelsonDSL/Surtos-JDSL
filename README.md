@@ -7,9 +7,8 @@ Sou **[Joelson da Silva Lima]**, graduando de **Licenciatura em Ciências Bioló
 
 ## O que você encontrará aqui?  
 📌 **Introdução ao R e RStudio** – Conceitos básicos para iniciantes.  
-📌 **Manipulação de dados** – Uso de pacotes como `dplyr` e `tidyverse`.  
 📌 **Visualização de dados** – Gráficos incríveis com `ggplot2`.  
-📌 **Estatística aplicada** – Testes estatísticos essenciais para Ciências Biológicas.  
+📌 **Estatística aplicada** – Resumos sobre estatística e suas aplicações utilizando o RStudio.  
 📌 **Exercícios práticos** – Para reforçar o aprendizado.  
 
 
