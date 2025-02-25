@@ -1,5 +1,3 @@
----
-
 # Ensino de R e RStudio 📊  
 
 Bem-vindo(a) a este repositório! 🎓 Aqui, você encontrará materiais voltados para o ensino de **R e RStudio**, com foco em estudantes de graduação que desejam aprender a linguagem e suas aplicações em análises de dados.  
