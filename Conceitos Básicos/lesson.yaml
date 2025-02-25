@@ -66,3 +66,10 @@
 
 - Class: text
   output: "Parabéns! Você concluiu esta lição de introdução à estatística. Continue praticando e explorando mais conceitos estatísticos!"
+
+- Class: mult_question
+  Output: Você gostaria de informar sobre a conclusão desta atividade?
+  CorrectAnswer: NULL
+  AnswerChoices: Yes; No
+  AnswerTests: notify()
+  Hint: NULL
